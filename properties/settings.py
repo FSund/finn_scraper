@@ -50,7 +50,7 @@ DEPTH_LIMIT = 0
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 SPIDER_MIDDLEWARES = {
-    'properties.middlewares.PropertiesSpiderMiddleware': 543,
+    'properties.middlewares.FinnSpiderMiddleware': 543,
 }
 
 # Enable or disable downloader middlewares
