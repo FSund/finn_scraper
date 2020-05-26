@@ -9,7 +9,10 @@ def make_and_model_to_finn_numbers(make_, model_):
     make = make_.lower().replace(" ", "")
     model = model_.lower().replace(" ", "")
 
-    make_map = {'volvo': '818'}
+    make_map = {
+        'volvo': '818',
+        'skoda': '808'
+    }
 
     def model_to_finn(make_number, model):
         model_map = {}
@@ -19,6 +22,11 @@ def make_and_model_to_finn_numbers(make_, model_):
                 'v70': '3077',
                 'v90': '2000386'
             }
+        if make == "skoda":
+            model_map = {
+                'superb': '7532'
+            }
+
         return model_map[model]
 
     make_number = make_map[make.lower()]

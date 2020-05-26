@@ -32,7 +32,7 @@ def plot_the_stuff(filename, min_year, max_year, min_mileage, max_mileage):
         cars = sorted_data[np.where(sorted_data[:,2] == year)]
         datas.append(cars)
 
-        plt.plot(cars[:, 1], cars[:, 0], "-o", label=f"Årsmod. {year}")
+        plt.plot(cars[:, 1], cars[:, 0], "o", label=f"Årsmod. {year}")
     plt.legend()
     plt.ylabel("Pris [kr]")
     plt.xlabel("Kilometer")
