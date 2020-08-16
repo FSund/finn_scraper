@@ -11,7 +11,8 @@ def make_and_model_to_finn_numbers(make_, model_):
 
     make_map = {
         'volvo': '818',
-        'skoda': '808'
+        'skoda': '808',
+        'ford': '767'
     }
 
     def model_to_finn(make_number, model):
@@ -25,6 +26,10 @@ def make_and_model_to_finn_numbers(make_, model_):
         if make == "skoda":
             model_map = {
                 'superb': '7532'
+            }
+        if make == "ford":
+            model_map = {
+                'mondeo': '1055'
             }
 
         return model_map[model]
